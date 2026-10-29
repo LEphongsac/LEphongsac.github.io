@@ -24,5 +24,27 @@ main {
   padding: 32px 16px;
 }
 a { color: var(--link); }
+.topbar, footer {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  justify-content: space-between;
+  color: var(--muted);
+}
+.topbar { border-bottom: 1px solid var(--muted); }
+.topbar nav { display: flex; gap: 16px; }
+.app-name { font-weight: 600; color: var(--text); }
+footer { justify-content: center; border-top: 1px solid var(--muted); }
+.yt-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px 8px 8px;
+  border: 1px solid var(--muted);
+  border-radius: 8px;
+}
 em { color: var(--muted); }
 code { font-size: 0.9em; }
